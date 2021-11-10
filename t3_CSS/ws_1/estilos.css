@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+}
+
+ol {
+    color:red;
+}
+
+ol .fem {
+    color:blue;
+}
+
+#middle {
+    text-align: right;
+    list-style-type: upper-roman;
+    line-height: 1.8;  
+}
+
+#two_cities {
+    list-style-type: upper-latin;
+}
+
+ol :nth-child(5) {
+    font-style: italic;
+}
+
+#middle :first-child, #two_cities :nth-child(2) {
+    font-weight:bold;
+}

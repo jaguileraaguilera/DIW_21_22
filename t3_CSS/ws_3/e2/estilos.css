@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+}
+
+table tr th {
+    background-color: rgb(90,155,213);
+    border-bottom: 2px solid white;
+}
+
+table tr:nth-child(2n) {
+    background-color: rgb(210,222,239);
+}
+
+table tr:nth-child(2n+1) {
+    background-color: rgb(234,239,247);
+}
+
+/* falta añadir mayor espaciado entre los th y los td*/

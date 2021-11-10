@@ -1,0 +1,21 @@
+table, table tr th, table tr td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*Averiguar como hacerlo con la fila completa*/
+table tr td:hover  {
+    background-color: yellow;
+} 
+
+table tr th {
+    background-color: grey;
+}
+
+
+table tr td {
+    background-color: lightgrey;
+}

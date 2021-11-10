@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    color:darkred;
+}
+
+ol {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

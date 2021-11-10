@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: black;
+    background-color: grey;
+}
+
+.naranja {
+    color: orange;
+    background-color: blue;
+}
+
+.consola {
+    color: green;
+    background-color: black;
+}
+
+a.importante {
+    text-decoration: none;
+}
+
+a.importante:hover {
+    background-color: yellow;
+}
+
+#título {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: rgb(60,60,60);
+}
+
