@@ -14,5 +14,3 @@ table tr:nth-child(2n) {
 table tr:nth-child(2n+1) {
     background-color: rgb(234,239,247);
 }
-
-/* falta añadir mayor espaciado entre los th y los td*/

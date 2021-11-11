@@ -6,16 +6,20 @@ table {
     border-collapse: collapse;
 }
 
-/*Averiguar como hacerlo con la fila completa*/
-table tr td:hover  {
-    background-color: yellow;
-} 
-
 table tr th {
     background-color: grey;
 }
 
-
 table tr td {
     background-color: lightgrey;
 }
+
+/*
+table tr:hover  {
+    background-color: yellow;
+}
+*/
+/*Para hacerlo con :hover, la tabla no puede
+tener ningún color. Hay que buscarse las
+habichuelas de otra forma*/
+
