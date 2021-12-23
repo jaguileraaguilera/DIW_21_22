@@ -1,0 +1,45 @@
+.offset { 
+    overflow: hidden; 
+    margin: 20px 0 40px 20px; 
+}
+        
+.offset div {
+    background-color: #eee;
+    float:left;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+}
+
+.examplelabelboxshadow {
+    color: #888;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.a{box-shadow:-3px 3px #888;}
+
+.b{}
+
+.c{}
+
+.d{}
+
+.e{}
+
+.f{}
+
+.g{box-shadow:2px 2px #888;}
+
+.h{box-shadow:-4px -4px 4px #888 inset;}
+
+.i{box-shadow:-6px -6px #888 inset;}
+
+.j{box-shadow:-10px -10px 6px #888 inset;}
+
+.k{box-shadow:-1px -1px 4px #888 inset, 1px 1px 4px #888 inset;}
+
+.l{box-shadow:-4px -4px 6px #888 inset, 4px 4px 6px #888 inset}

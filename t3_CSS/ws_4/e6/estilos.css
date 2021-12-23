@@ -1,4 +1,12 @@
 .multiplebackgrounds {
     width: 500px;
-    height:250px;
+    height: 250px;
+    background-image: url(ribbon.png), url(decoration.png), url(old_paper.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right bottom, left top, center;
+}
+
+.multiplebackgrounds p {
+    text-align: right;
+    font-weight: bold;
 }

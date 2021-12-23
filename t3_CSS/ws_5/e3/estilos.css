@@ -1,0 +1,27 @@
+p { 
+    font-size: 2em; 
+    margin: 1em;
+    padding: 0 5px; 
+}
+
+#b {
+    color:white; 
+    text-shadow:1px 1px 1px black, 0px 0px 10px  red;
+}
+
+#c {
+    text-shadow:-4px -4px 7px black, 6px 6px 7px black;
+}
+
+#d {
+    background-color:lightgray;
+    color: white;
+    text-shadow:0.5px 0.5px 3px black;
+}
+
+#e {
+    background-color: grey;
+    text-shadow:0.5px 0.5px 3px black;
+}
+
+#f{}

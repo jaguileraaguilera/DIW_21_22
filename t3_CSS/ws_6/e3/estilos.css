@@ -1,0 +1,35 @@
+body {
+    margin: 40px;
+}
+
+#container{
+    background: #666 url(https://lh3.googleusercontent.com/WQtp7B0VyKaoXtrfX_WrT1aoeWO_GYKGM45Vv0w4Tgkc5lfD-lq5nEXXiu3iyIHn28mj=s152) no-repeat left top;
+    background-size: 420px 480px;
+    width: 420px;
+    height: 480px;
+    position: relative;
+}
+
+.snowflake {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+}
+
+.snowflake.f1 {
+    left: 40px;
+}
+
+.snowflake.f2 {
+    font-size: 1.8em;
+    left: 120px;
+}
+
+.snowflake.f3 {
+    left: 200px;
+}
+
+.snowflake.f4 {
+    font-size: 1.5em;
+    left: 280px;
+}

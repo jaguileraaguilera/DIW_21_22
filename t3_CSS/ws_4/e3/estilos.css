@@ -1,0 +1,17 @@
+.testimonials__card--img img {
+    width: 40%;
+    height: 40%;
+}
+
+.testimonials__card--img:hover {
+
+}
+
+.testimonials__card--content {
+
+}
+
+.testimonials__card--content:hover h3 {
+    font-weight: bold;
+    text-transform: capitalize ;
+}
