@@ -1,0 +1,15 @@
+#galeria {
+    display: grid;
+
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+}
+
+.foto {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
