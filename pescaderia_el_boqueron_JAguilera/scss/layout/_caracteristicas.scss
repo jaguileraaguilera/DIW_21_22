@@ -1,0 +1,23 @@
+////@access public
+////@author jaa
+
+///Sección características, formada por 3 subsecciones (carac_card)
+///@group layout
+
+section#carac {
+    height: 100vh;
+    
+    @include response(sm) {
+        height: 300vh;
+    }
+
+    width: 100vw;
+    background-color: color(primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @import "../components/carac_card";
+}

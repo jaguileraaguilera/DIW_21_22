@@ -1,0 +1,45 @@
+////@access public
+////@author jaa
+
+///Componente nov_card, compuesto por una imagen y texto
+///@group components
+
+.nov_card {
+    @include card_style(color(quaternary));
+
+    &_img {
+        height: 100%;
+        @include response(sm) {
+            height: 35%;
+        }
+        width: auto;
+        padding: 1rem;
+        align-items: center;
+        
+        @include centrar_flex();
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &_txt {
+        height: 100%;
+        padding: 1rem;
+        width: 80%;
+
+        @include response(sm) {
+            height: 60%;
+            padding: 0.5rem;
+        }
+
+        @include centrar_flex();
+        flex-direction: column;
+        width: 80%;
+
+        p {
+            font-size: size(md);
+        }
+    }
+}

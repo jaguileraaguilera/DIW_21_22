@@ -1,0 +1,50 @@
+////@access public
+////@author jaa
+
+///Componente carac_card, compuesto por una imagen y texto
+///@group components
+
+.carac_card {
+    @include card_style(color(secondary));
+
+    &_img {
+        height: 100%;
+
+        @include response(sm) {
+            height: 35%;
+        }
+        
+        width: auto;
+        padding: 1rem;
+        
+        @include centrar_flex();
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &_txt {
+        height: 100%;
+        padding: 1rem;
+        width: 80%;
+
+        @include response(sm) {
+            height: 60%;
+            padding: 0.5rem;
+        }
+
+        @include centrar_flex();
+        flex-direction: column;
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: size(xl) * 1.5;
+        }
+
+        p {
+            font-size: size(md);
+        }
+    }
+}

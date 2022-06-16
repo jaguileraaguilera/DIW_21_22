@@ -1,0 +1,43 @@
+////@access public
+////@author jaa
+
+
+/*Paleta de colores*/
+///Colores del proyecto
+///@group colors
+$colors: (
+    primary: #333,
+    secondary: #ffe,
+    tertiary: #f2f0f1,
+    quaternary: #f5b149
+);
+
+///Funcion que devuelve color
+///@group colors
+///@param {string} $color-name -- nombre color : primary, secondary, terciary, quaternary
+///@return {color}
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+/*Tamaño fuentes*/
+///Tamaños principales del proyecto
+///@group sizes
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+/*Función que devuelve un tamaño*/
+///Función que devuelve un tamaño
+///@group sizes
+///@param {string} $size --identificador tamaño: xl, lg, md, sm, xs
+///@return {tamaño}
+@function size($size) {
+    @return map-get($map: $font-sizes, $key: $size);
+}
+
+

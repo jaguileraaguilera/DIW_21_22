@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;500;600;700&display=swap');
+
+
+/*Poner mi fuente*/
+:root {
+    --main-font: 'Cuprum';
+    --alternate-font: 'sans-serif';
+}
+
+html {
+    font-family: var(--main-font);
+}
+
+body {
+    font-family: inherit;
+}
+
+.container {
+    background-color: aqua;
+}
+
+.container-fluid {
+    background-color: bisque;
+}
+
+.container-md {
+    background-color: burlywood;
+}
+
+.hero {
+    height: 75vh;
+    background-color: antiquewhite;
+}

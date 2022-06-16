@@ -1,0 +1,24 @@
+.first-nav {
+    grid-column: 7 / -1;
+    grid-row: 1 / 2;
+
+    @include navigation();
+
+    @include response(lg) {
+        grid-column: 6 / -1;
+    }
+    @include response(md) {
+        grid-column: 5 / -1;
+    }
+
+    @include response(sm) {
+        grid-column: 4 / -1;
+    }
+}
+
+.second-nav {
+    grid-column: 3 / 8;
+    grid-row: 3 / 4;
+
+    @include navigation();
+}

@@ -1,0 +1,42 @@
+/*Fuentes de Google: Dancing Script y Josefin Sans*/
+////@access public
+////@author jaa
+
+///Base
+///@group base
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+/*Inicializamos los valores por defecto*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    @include response(lg) {
+        font-size: 50%;
+    }
+
+    @include response(md) {
+        font-size: 45%;
+    }
+
+    @include response(sm) {
+        font-size: 50%;
+    }
+}
+
+body {
+    line-height: 1.8;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("../images/wawes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

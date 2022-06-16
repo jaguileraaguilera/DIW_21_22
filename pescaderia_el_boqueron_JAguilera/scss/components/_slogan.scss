@@ -1,0 +1,44 @@
+////@access public
+////@author jaa
+
+///Componente slogan, compuesto por el logo de la empresa y su nombre
+///@group components
+
+#slogan {
+    height: 20%;
+    width: 100%;
+    
+    @include centrar_flex();
+    flex-direction: row;
+
+    @include response(sm) {
+        flex-direction: column;
+    }
+
+    &_logo {
+        height: max-content;
+        width: 8rem;
+
+        @include centrar_flex();
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &_nombre {
+        height: 100%;
+
+        @include centrar_flex();
+
+        font-weight: 300;
+        font-size: size(xxl) * 2;
+
+        @include response(sm) {
+            font-size: size(xxl) * 1.4;
+        }
+
+        padding: 1rem;
+    }
+}

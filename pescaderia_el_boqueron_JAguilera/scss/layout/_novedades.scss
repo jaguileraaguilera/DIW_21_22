@@ -1,0 +1,23 @@
+////@access public
+////@author jaa
+
+///Sección novedades, formada por 3 subsecciones (nov_card)
+///@group layout
+
+section#nov {
+    height: 100vh;
+
+    @include response(sm) {
+        height: 300vh;
+    }
+    
+    width: 100vw;
+    background-color: color(primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @import "../components/nov_card";
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    background-color: #f2f2f2;
+    width: 100vw;
+    height: 100vh;
+}
+
+section h1 {
+    padding-top:0.7rem;
+    padding-left:0.7rem;
+    font-weight:700;
+}
+
+section div {
+    height: 100%;
+    width: 100%;
+    padding-left:0.7rem;
+    background-image: url("granada.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+section div p {
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    color:white;
+    visibility: hidden;
+}
+
+section div:hover {
+    filter: blur(2px) contrast(70%);
+}
+
+section div:hover p {
+    visibility: visible;
+    /* filter: blur(0) contrast(1); */
+}
+   

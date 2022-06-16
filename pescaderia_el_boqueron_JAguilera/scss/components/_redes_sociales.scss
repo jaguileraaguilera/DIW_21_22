@@ -1,0 +1,29 @@
+////@access public
+////@author jaa
+
+///Componente redes sociales
+///@group components
+
+#redes_sociales {
+    height: 20%;
+    width: 100%;
+    @include centrar_flex();
+    flex-direction: row;
+
+    .img_wrapper {
+        height: 100%;
+        width: auto;
+        padding: 1rem;
+        
+        @include centrar_flex();
+
+        img {
+            height: 100%;
+            width: auto;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

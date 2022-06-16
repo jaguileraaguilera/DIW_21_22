@@ -1,0 +1,33 @@
+////@access public
+////@author jaa
+
+///Componente opi_card, compuesto por texto
+///@group components
+
+.opi_card {
+    @include card_style(color(secondary));
+
+    &_txt {
+        height: 100%;
+        padding: 1rem;
+        width: 100%;
+
+        @include response(sm) {
+            padding: 0.5rem;
+        }
+
+        @include centrar_flex();
+        height: 100%;
+
+        flex-direction: column;
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: size(xl) * 1.5;
+        }
+
+        p {
+            font-size: size(md);
+        }
+    }
+}

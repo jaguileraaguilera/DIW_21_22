@@ -1,0 +1,35 @@
+////@access public
+////@author jaa
+
+/// Pie de página, dividido en tres partes:
+/// 1) Logo y nombre de la empresa
+/// 2) Redes sociales
+/// 3) Copyright
+///@group layout
+
+footer {
+    height: 50vh;
+
+    @include response(sm) {
+        height: 75vh;
+    }
+
+    width: 100vw;
+    background-color: color(terciary);
+    @include centrar_flex();
+    flex-direction: column;
+    
+    
+    @import "../components/slogan";
+    @import "../components/redes_sociales";
+
+    #copyright {
+        @include centrar_flex();
+        @include response(sm) {
+            flex-direction: column;
+        }
+        
+        font-size: size(xxl);
+        padding: 1rem;
+    }
+}

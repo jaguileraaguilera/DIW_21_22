@@ -1,0 +1,19 @@
+////@access public
+////@author jaa
+
+/// Cabecera de la página, compuesta por dos componentes: cabecera y cuerpo
+///@group layout
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: color(primary);
+    color: white;
+
+    #cabecera {
+        background-color: color(terciary);
+        @import "../components/slogan";
+    }
+
+    @import "../components/hdr_cuerpo";
+}

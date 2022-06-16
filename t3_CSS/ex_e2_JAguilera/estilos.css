@@ -1,0 +1,35 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'header header header header'
+    'nav nav aside aside aside'
+    'nav nav aside aside aside'
+    'nav nav aside aside aside'
+    'nav nav aside aside aside'
+    'nav nav ads ads ads'
+    'nav nav ads ads ads'
+    'footer footer footer footer';
+}
+
+header, nav, aside, #ads, footer, article {
+    background-color: brown;
+    color:white;
+}
+header { 
+    grid-area: header;
+}
+nav { 
+    grid-area: nav;
+}
+aside {
+    grid-area: aside;
+}
+#ads {
+    grid-area: ads;
+}
+footer {
+    grid-area: footer;
+}

@@ -1,0 +1,38 @@
+////@access public
+////@author jaa
+
+///Componente cuerpo, compuesto por dos párrafos y un enlace
+///@group components
+
+#cuerpo {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    p:first-child {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 400;
+        font-size: size(xl) * 2;
+    }
+
+    p:nth-child(2) {
+        font-size: size(xl) * 1.5;
+    }
+
+    a {
+        background-color: color(terciary);
+        text-decoration: none;
+        color: white;
+        border: 3px solid white;
+        font-size: size(xl) * 1.5;
+        padding: 1rem;
+
+        &:hover {
+            background-color: color(quaternary);
+        }
+    }
+}

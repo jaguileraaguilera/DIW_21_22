@@ -1,0 +1,57 @@
+////@access public
+////@author jaa
+
+///Mixin para menú de navegación
+
+@mixin navigation () {
+    &-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    &-item {
+        list-style-type: none;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: color(primary);
+        font-size: size(md);
+        transition: all 0.2s ease;
+        &:hover {
+            color: lighten(color(primary), 30%);
+        }
+    }
+}
+
+///Mixin para posicionar un elemento flex (No lo tengo hecho)
+///@param {string} $justifycontent [center] --justificacion: center, flex-start, flex-end, space-between, ...
+///@param {string} $alignitem [center]-- alineación: center, flex-start, flex-end, baseline, stretch
+
+
+@mixin response($breakpoint) {
+    @if ($breakpoint == xl) {
+        @media(max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == lg) {
+        @media(max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == md) {
+        @media(max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == sm) {
+        @media(max-width: 576px) {
+            @content;
+        }
+    }
+}

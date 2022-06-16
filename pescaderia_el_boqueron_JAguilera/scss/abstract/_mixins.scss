@@ -1,0 +1,64 @@
+////@access public
+////@author jaa
+
+///Mixin para centrar usando flex (justify-content: center, align-items: center)
+///@group mixins
+@mixin centrar_flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+///Mixin para hacer responsive pg web
+///@group mixins
+///@param {string} $breakpoint -- lg (100px), md (800px), sm (500px) ...
+
+@mixin response($breakpoint) {
+
+    @if ($breakpoint == lg) {
+        @media(max-width: 1000px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == md) {
+        @media(max-width: 800px) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == sm) {
+        @media(max-width: 500px) {
+            @content;
+        }
+    }
+}
+
+///Mixin que agrupa estilos comunes de una tarjeta
+///@group mixins
+///@param {string} $color -- red, rgb(0,1,2) ...
+@mixin card_style($color) {
+    height: 30%;
+    width: 85%;
+    background-color: $color;
+    border: 3px solid $color;
+
+    display: flex;
+    flex-flow: row;
+    @include response(sm) {
+        flex-flow: column;
+    }
+    justify-content: space-between;
+    align-items: center;
+}
+
+///Mixin que agrupa estilos comunes para el formateado de texto
+///@group mixins
+@mixin txt() {
+    height: 100%;
+    padding: 1rem;
+    @include response(sm) {
+        height: 50%;
+        padding: 0.5rem;
+    }
+}

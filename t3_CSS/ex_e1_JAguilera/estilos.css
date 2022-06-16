@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*#cabecera*/
+header {
+    width: 100vw;
+    height: 90vh;
+    background-image: url("hero.jpg");
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Raleway;
+    color:white;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#cabecera h1 {
+    font-weight: 300;
+    font-size: xx-large;
+    padding: 3rem;
+}
+
+#cabecera h1 span {
+    font-weight: 900;
+}
+
+#cabecera nav ul {
+    list-style: none;
+    font-size: smaller;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#cabecera nav ul li {
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+#cabecera nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#cabecera nav ul li:hover {
+   background-color: rgba(155,155,155,0.5);
+}
+
+#cabecera nav ul li a:hover{ 
+    color:black;
+}
+
+#pie p {
+    padding-right: 2rem;
+    text-align: end;
+}
+
+#pie p:first-child {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+#pie p:nth-child(2) {
+    font-size: smaller;
+}
+
+/*Tablet*/
+@media all and (min-width: 780px) and (max-width: 1000px){
+    #cabecera{
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+    }
+    #cabecera h1 {
+        padding: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    #cabecera nav ul li {
+        padding-top: 0.5rem;
+    }
+}
+
+/*Móvil*/
+@media all and (max-width: 780px){
+    #cabecera{
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    #cabecera h1 {
+        padding: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    #cabecera nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cabecera nav ul li {
+        padding: 0.5rem;
+    }
+
+    #pie p {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 2rem;
+        text-align: end;
+    }
+}

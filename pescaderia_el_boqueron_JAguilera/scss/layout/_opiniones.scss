@@ -1,0 +1,23 @@
+////@access public
+////@author jaa
+
+///Sección opiniones, formada por 3 subsecciones (opi_card)
+///@group layout
+
+section#opi {
+    height: 100vh;
+
+    @include response(sm) {
+        height: 175vh;
+    }
+    
+    width: 100vw;
+    background-color: color(primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @import "../components/opi_card";
+}
